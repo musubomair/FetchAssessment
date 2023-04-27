@@ -1,0 +1,6 @@
+framework module Pods_fetch_assessment_fetch_assessmentUITests {
+  umbrella header "Pods-fetch-assessment-fetch-assessmentUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

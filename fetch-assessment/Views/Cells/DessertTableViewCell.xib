@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="DessertTableViewCell" rowHeight="252" id="KGk-i7-Jjw" customClass="DessertTableViewCell" customModule="fetch_assessment" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="404" height="252"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="404" height="252"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zNs-Nd-cvr">
+                        <rect key="frame" x="0.0" y="0.0" width="404" height="252"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.80000000000000004" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="tYV-rJ-XaE">
+                                <rect key="frame" x="0.0" y="0.0" width="404" height="252"/>
+                            </imageView>
+                            <view alpha="0.69999999999999996" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cHk-ld-4Rk">
+                                <rect key="frame" x="15" y="93.666666666666671" width="374" height="65.000000000000014"/>
+                                <color key="backgroundColor" systemColor="labelColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="65" id="heL-Yu-52F"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dessert Name" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v12-Ca-k5b">
+                                <rect key="frame" x="5" y="115" width="394" height="22"/>
+                                <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="18"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="v12-Ca-k5b" firstAttribute="centerY" secondItem="zNs-Nd-cvr" secondAttribute="centerY" id="DX0-Ff-WTI"/>
+                            <constraint firstItem="tYV-rJ-XaE" firstAttribute="leading" secondItem="zNs-Nd-cvr" secondAttribute="leading" id="Nm8-oR-E3j"/>
+                            <constraint firstAttribute="trailing" secondItem="cHk-ld-4Rk" secondAttribute="trailing" constant="15" id="PH2-IP-Lwj"/>
+                            <constraint firstAttribute="trailing" secondItem="v12-Ca-k5b" secondAttribute="trailing" constant="5" id="RBR-ze-0Jt"/>
+                            <constraint firstItem="v12-Ca-k5b" firstAttribute="leading" secondItem="zNs-Nd-cvr" secondAttribute="leading" constant="5" id="T5C-ik-4KE"/>
+                            <constraint firstItem="cHk-ld-4Rk" firstAttribute="centerY" secondItem="zNs-Nd-cvr" secondAttribute="centerY" id="VSc-Ts-OEz"/>
+                            <constraint firstAttribute="trailing" secondItem="tYV-rJ-XaE" secondAttribute="trailing" id="YoZ-LD-pt3"/>
+                            <constraint firstItem="tYV-rJ-XaE" firstAttribute="top" secondItem="zNs-Nd-cvr" secondAttribute="top" id="bSw-KT-dmC"/>
+                            <constraint firstItem="cHk-ld-4Rk" firstAttribute="centerX" secondItem="zNs-Nd-cvr" secondAttribute="centerX" id="hKS-0u-iIo"/>
+                            <constraint firstItem="cHk-ld-4Rk" firstAttribute="leading" secondItem="zNs-Nd-cvr" secondAttribute="leading" constant="15" id="lkK-UQ-hSu"/>
+                            <constraint firstAttribute="bottom" secondItem="tYV-rJ-XaE" secondAttribute="bottom" id="r8B-fk-Fzz"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="zNs-Nd-cvr" secondAttribute="bottom" id="HuW-gI-yRG"/>
+                    <constraint firstItem="zNs-Nd-cvr" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="L9z-ho-fCv"/>
+                    <constraint firstItem="zNs-Nd-cvr" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="UeR-Iy-3Ta"/>
+                    <constraint firstAttribute="trailing" secondItem="zNs-Nd-cvr" secondAttribute="trailing" id="xC1-3K-Yry"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="dessertName" destination="v12-Ca-k5b" id="p80-3b-MP5"/>
+                <outlet property="dessertNameBackdropView" destination="cHk-ld-4Rk" id="Xnl-11-Ghm"/>
+                <outlet property="dessertThumbnail" destination="tYV-rJ-XaE" id="cMg-KK-NIf"/>
+            </connections>
+            <point key="canvasLocation" x="106.87022900763358" y="92.253521126760575"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <systemColor name="labelColor">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
